@@ -213,7 +213,6 @@ public class ItemDlgCtrl : MonoBehaviour
         {
             isDlgShowd = true;
             itemDlgShowButtnText.text = "アイテムを非表示";
-
             itemDlg.SetActive(true);
 
             SoundManager.instance.PlayButtonSEOK();
