@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c028cf64afa12324998db3f347d13b13, type: 3}
+  m_Name: SpecDataObj 8
+  m_EditorClassIdentifier: 
+  number: 9
+  payouts: 020000000200000001000000030000000300000003000000030000000f000000000000004c1d0000
+  fbunbo: 140000000100000014000000
+  picWeight: 1900000019000000190000000f0000000a000000
+  rounddatas: 0f0000000a000000080000000400000002000000
+  jitandataL: 1e000000140000000f0000000a00000005000000
+  jitandataH: 1e00000019000000140000000f0000000f000000
+  machineType: 2
+  startKposOffsets:
+  - 0.0002
+  - -0.0002
+  - 0.0005
+  - -0.0005
+  haneKposOffsets:
+  - -0.004
+  - -0.003
+  - 0.004
+  - 0.003

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07a5d0a39f91a147b59a73d99ab7662, type: 3}
+  m_Name: MissionDataOb_5
+  m_EditorClassIdentifier: 
+  number: 5
+  missionTitle: "\u5927\u5F53\u308A\u51FA\u7389\u4E00\u64832000\u767A\u3092\u7372\u5F97\u305B\u3088"
+  missionTitleShort: "\u5927\u5F53\u308A\u51FA\u7389\u4E00\u64832000\u767A\u3092\u7372\u5F97"
+  value: 2000
+  prize: 1000
+  itemNumber: 88888
