@@ -3,7 +3,7 @@ using UnityEngine.Video;
 
 public class USBMemoryManager : MonoBehaviour
 {
-    [SerializeField] GameObject centerCtrl;Å@
+    [SerializeField] GameObject centerCtrl;
     [SerializeField] VideoPlayer videoPlayer;
     [SerializeField] GameObject denchyuCtrl;
     [SerializeField] GameObject vRollingCtrl;
