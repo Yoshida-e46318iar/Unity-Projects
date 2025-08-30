@@ -21,8 +21,8 @@ MonoBehaviour:
   jitandataH: 4b0000003200000019000000190000000a000000
   machineType: 0
   startKposOffsets:
-  - 0.0002
-  - -0.0002
+  - 0.0004
+  - -0.0004
   - 0.0002
   - -0.0002
   haneKposOffsets:

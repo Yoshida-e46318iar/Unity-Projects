@@ -7,14 +7,21 @@ public class USBMemoryManager : MonoBehaviour
     [SerializeField] VideoPlayer videoPlayer;
     [SerializeField] GameObject denchyuCtrl;
     [SerializeField] GameObject vRollingCtrl;
+    [SerializeField] GameObject DisplayCanvas;
     [SerializeField] string movieFileName;
+
+    GameObject generalCanvas;
+    GameObject itemCanvas;
     void Start()
     {
         if (videoPlayer == null)
+        {
             videoPlayer = GetComponent<VideoPlayer>();
+            
+        }
 
-        // イベントに関数を登録
-        videoPlayer.loopPointReached += OnVideoFinished;
+            // イベントに関数を登録
+            videoPlayer.loopPointReached += OnVideoFinished;
     }
 
     //private void Update()
@@ -28,9 +35,17 @@ public class USBMemoryManager : MonoBehaviour
     {
         videoPlayer.gameObject.SetActive(true);
         string path = System.IO.Path.Combine(Application.streamingAssetsPath, movieFileName);
+        DisplayCanvas.SetActive(false);
+        generalCanvas = GameObject.FindGameObjectWithTag("GeneralCanvas");
+        generalCanvas.SetActive(false);
+        itemCanvas = GameObject.FindGameObjectWithTag("ItemCanvas");
+        itemCanvas.SetActive(false);
+        SoundManager.instance.FadeOutBGM();
 
         videoPlayer.url = path;
         videoPlayer.Play();
+
+
 
     }
 
@@ -38,6 +53,11 @@ public class USBMemoryManager : MonoBehaviour
     {
         //Debug.Log("動画の再生が終了しました");
         videoPlayer.gameObject.SetActive(false);
+        DisplayCanvas.SetActive(true);
+        generalCanvas.SetActive(true);
+        itemCanvas.SetActive(true);
+        SoundManager.instance.FadeInBGM();
+
         ItemEffectStart();
     }
 

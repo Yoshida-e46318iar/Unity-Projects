@@ -43,7 +43,7 @@ public class AdMobManager : MonoBehaviour
 #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-1850040616476651/6481342669 ";// "; ca-app-pub-3940256099942544/5224354917
 #elif UNITY_IPHONE
-    private string _adUnitId = "ca-app-pub-1850040616476651/1169728318";// "ca-app-pub-3940256099942544/6978759866";
+  private string _adUnitId = "ca-app-pub-3940256099942544/6978759866";
 #else
   private string _adUnitId = "unused";
 #endif
@@ -148,7 +148,7 @@ public class AdMobManager : MonoBehaviour
 #if UNITY_ANDROID
     private string _adUnitId_Intst = "ca-app-pub-1850040616476651/4415298553";// "; ca-app-pub-3940256099942544/1033173712
 #elif UNITY_IPHONE
-    private string _adUnitId_Intst = "ca-app-pub-1850040616476651/1361300000";//"ca-app-pub-3940256099942544/4411468910";
+  private string _adUnitId_Intst = "ca-app-pub-3940256099942544/4411468910";
 #else
   private string _adUnitId_Intst = "unused";
 #endif

@@ -473,9 +473,7 @@ public class GeneralManager : MonoBehaviour
                 if (itemDlg.activeSelf)
                     itemDlg.GetComponent<ItemDlgCtrl>().DlgSetActive(false);
 
-                itemDlgButtonText.text= "アイテムを表示";//全角スペースが入っていた?
-
-
+                itemDlgButtonText.text= "アイテムを表示";
             } );
 
 

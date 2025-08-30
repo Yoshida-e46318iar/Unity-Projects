@@ -18,6 +18,8 @@ TagManager:
   - SpecSheetManager
   - MedicineEffectTimer
   - SpringEffectTimer
+  - GeneralCanvas
+  - ItemCanvas
   layers:
   - Default
   - TransparentFX
