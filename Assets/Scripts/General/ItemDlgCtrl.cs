@@ -24,6 +24,10 @@ public class ItemDlgCtrl : MonoBehaviour
     int currentItemNum = 0;
     bool isDlgShowd=false;
 
+    const string itemButtonOnText = "アイテムを非表示";
+    const string itemButtonOffText = "アイテムを表示";
+
+
     void Start()
     {
         itemLSizePanel.SetActive(false);
@@ -208,22 +212,20 @@ public class ItemDlgCtrl : MonoBehaviour
 
     public void DlgSetActive(bool mode)
     {
-
         if (mode)
         {
             isDlgShowd = true;
-            itemDlgShowButtnText.text = "アイテムを非表示";
+            itemDlgShowButtnText.text = itemButtonOnText;
             itemDlg.SetActive(true);
 
             SoundManager.instance.PlayButtonSEOK();
             UpdateItemPicture();
 
         }
-
         else
         {
             itemDlg.SetActive(false);
-            itemDlgShowButtnText.text = "アイテムを表示";
+            itemDlgShowButtnText.text = itemButtonOffText;
             isDlgShowd = false;
             SoundManager.instance.PlayButtonSECancel();
         }

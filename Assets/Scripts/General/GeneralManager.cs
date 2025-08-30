@@ -65,9 +65,9 @@ public class GeneralManager : MonoBehaviour
 
     public static int[,] itemAcquireds=new int[16,5]; //アイテムの記憶箱 16種類×3
     public static int[] questConditions=new int[16];
-    //0:ホールのドア,1:オフィスのドア,2:倉庫のドア,
 
     public static int isShowInterAdCount = 0;
+    const string itemButtonOffText = "アイテムを表示";
 
     //アイテムの保存用
     string saveStr = "";
@@ -234,6 +234,7 @@ public class GeneralManager : MonoBehaviour
         totalOut= 0;
         currentMissionNum = 0;
         currentMachineNum = 0;
+        clearedMissionNum = 0;
         isSavaDataExist = 0;
         for (int i = 0; i < itemAcquireds.GetLength(0); i++)
         {
@@ -473,7 +474,7 @@ public class GeneralManager : MonoBehaviour
                 if (itemDlg.activeSelf)
                     itemDlg.GetComponent<ItemDlgCtrl>().DlgSetActive(false);
 
-                itemDlgButtonText.text= "アイテムを表示";
+                itemDlgButtonText.text = itemButtonOffText;
             } );
 
 

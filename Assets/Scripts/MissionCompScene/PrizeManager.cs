@@ -184,7 +184,8 @@ public class PrizeManager : MonoBehaviour
     {
         if (GeneralManager.instance.GetCurrnetSceneName() == "MissionCompleteScene")
         {
-            adManager.GetComponent<AdMobManager>().ShowInterstitialAdWithTimeout();
+            if(GeneralManager.clearedMissionNum>1)
+                adManager.GetComponent<AdMobManager>().ShowInterstitialAdWithTimeout();
         }
 
         GeneralManager.instance.UpdateAmountGold();
