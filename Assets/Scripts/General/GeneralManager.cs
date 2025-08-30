@@ -67,7 +67,7 @@ public class GeneralManager : MonoBehaviour
     public static int[] questConditions=new int[16];
 
     public static int isShowInterAdCount = 0;
-    const string itemButtonOffText = "アイテムを表示";
+    [SerializeField] string itemButtonOffText;
 
     //アイテムの保存用
     string saveStr = "";

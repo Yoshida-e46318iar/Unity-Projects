@@ -24,8 +24,8 @@ public class ItemDlgCtrl : MonoBehaviour
     int currentItemNum = 0;
     bool isDlgShowd=false;
 
-    const string itemButtonOnText = "アイテムを非表示";
-    const string itemButtonOffText = "アイテムを表示";
+    [SerializeField] string itemButtonOnText;
+    [SerializeField] string itemButtonOffText;
 
 
     void Start()
