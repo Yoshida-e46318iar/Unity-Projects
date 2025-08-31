@@ -20,3 +20,8 @@
 
 # Unity Cloud Build でも不要
 UserSettings/
+
+# CocoaPods
+Pods/
+Podfile
+Podfile.lock
