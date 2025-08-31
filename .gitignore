@@ -1,0 +1,27 @@
+# Unity生成ファイル除外
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Rider / VS
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Unity Cloud Build でも不要
+UserSettings/
+
+# CocoaPods
+Pods/
+Podfile
+Podfile.lock
